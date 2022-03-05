@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Guess Color</title>
+</head>
+<body>
+    <div class="demo-wrap">
+        <img
+          class="demo-bg"
+          src="opbkg.png"
+          alt=""
+        >
+    <div class="demo-content">  
+    <div class="head">
+        <h1>
+            Le grand jeu de choix des couleurs</h1>
+    </div>
+    <div class="gameDiff">
+    <label for="difficulty">Choose the difficulty:</label>
+    <select name="difficulty" id="difficulty" onchange="difficultySelect()">
+        <option value="easy">Easy</option>
+        <option value="hard">Hard</option>
+    </select>
+    </div>
+    <div class="bodyOfTheGame">
+        <div class="askThis">
+            <h3>Which tile represents <span id="rgbLights"></span> ?</h3>
+        </div>
+        <div class="cntr">
+        <div class="mcqArea">
+                    <div class="mcqItem"></div>
+                    <div class="mcqItem"></div>
+                    <div class="mcqItem"></div>
+                    <div class="mcqItem"></div>
+                    <div class="mcqItem"></div>
+                    <div class="mcqItem"></div>
+        </div>
+        </div>
+    </div>
+        <button class="reset">New Color</button>
+    </div>  
+    </div>      
+    <script src="index.js" charset="utf-8"></script>
+    
+</body>
+</html>
